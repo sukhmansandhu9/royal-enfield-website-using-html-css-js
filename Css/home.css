@@ -1,0 +1,89 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+.differentSection {
+  margin: 2vw auto;
+  padding: 2vw 0;
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.933);
+  border-radius: 20px;
+}
+/* Styling text section of home page */
+.textSection {
+  /* background-color: red; */
+  width: 60vw;
+  height: 12vw;
+  color: white;
+  margin: 2vw auto;
+}
+.textSection p {
+  font-size: 2vw;
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+}
+
+/* Styling video section of home page */
+.videoSection {
+  margin: 0vw auto;
+  width: 70vw;
+}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling the image slider of home page */
+.slider-box {
+  width: 90%;
+  max-height: 90vh;
+  position: relative;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+#slider {
+  width: 100%;
+  display: inline-flex;
+  transition: 0.7s;
+}
+
+#slider img {
+  width: 100vw;
+  height: 45.57vw;
+}
+
+.indicators {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.indicators span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.active {
+  background: #ffff !important;
+}

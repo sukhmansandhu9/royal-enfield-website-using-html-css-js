@@ -1,0 +1,122 @@
+* {
+padding: 0;    
+margin: 0;
+}
+
+/* Styling the navbar */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 233, 164);
+    color: black;
+    width: 100vw;
+    height: 70px;
+    filter: drop-shadow(15px 5px 3px black);
+    transition: height .5s;
+}
+
+/* Styling the brand logo (Royal Enfield) */
+.brand-logo {
+
+    height: 100%;
+    width: 20%;
+    background-image: url(../images/logo_royal_enfield.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 3vh;
+}
+
+/* Styling the links and text available in navbar */
+.navbar-links {
+    background-color: rgb(233, 233, 164);
+    transition: display .6s;
+    transition-delay: 1s;
+    height: 100%;
+}
+
+.navbar-links ul {
+    background-color: rgb(233, 233, 164);
+
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .brand-logo{
+        width: 200px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+

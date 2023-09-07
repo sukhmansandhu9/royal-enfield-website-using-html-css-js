@@ -1,0 +1,70 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+.differentSection {
+  margin: 2vw auto;
+  padding: 2vw 0;
+  width: 90vw;
+  background-color: rgb(93, 86, 86);
+  border-radius: 20px;
+}
+.textSection {
+  /* background-color: red; */
+  width: 60vw;
+  color: white;
+  margin: 1vw auto;
+}
+.textSection p {
+  font-size: 4vw;
+  font-family: "Oleo Script Swash Caps", cursive;
+  text-align: center;
+}
+/* Styling the prdouct card */
+.product {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  width: 40vw;
+  height: 29vw;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.product img {
+  width: 65%;
+}
+.product p {
+  font-size: 2vw;
+  font-family: "Oleo Script Swash Caps", cursive;
+}
+.contactUs {
+  background-color: rgb(233, 233, 164);
+  color: black;
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 1.5vw;
+  width: 10vw;
+  height: 3vw;
+
+  border-radius: 20px;
+}
+.contactUs:hover {
+  transform: scale(1.01);
+  background-color: rgb(217, 217, 120);
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .product {
+    width: 60vw;
+    height: 45vw;
+  }
+  .contactUs {
+    width: 13vw;
+    height: 5vw;
+    font-size: 2vw;
+  }
+  .product p {
+    font-size: 4vw;
+  }
+}

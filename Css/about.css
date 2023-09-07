@@ -1,0 +1,93 @@
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+.differentSection {
+  margin: 2vw auto;
+  padding: 2vw 0;
+  width: 90vw;
+  background-color: rgba(0, 0, 0, 0.933);
+  border-radius: 20px;
+}
+.mainHeading {
+  font-family: "Oleo Script Swash Caps", cursive;
+  font-size: 3vw;
+  color: white;
+  text-align: center;
+}
+/* Styling video section of home page */
+.videoSection {
+  margin: 0vw auto;
+  width: 70vw;
+}
+
+.video-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.video-container::after {
+  padding-top: 56.25%;
+  display: block;
+  content: "";
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Styling the story articles of about page */
+.story-article {
+  color: black;
+  background-color: rgb(213, 213, 213);
+  display: flex;
+  margin: auto;
+}
+
+.story-article img {
+  width: 300px;
+}
+
+.story-article-content {
+  align-self: center;
+  padding: 5px;
+}
+.story-article-content h1 {
+  text-align: center;
+  font-size: 3vw;
+}
+/* Google Font CDN Link */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+
+.font1 {
+  font-family: "Baloo Bhaina 2", cursive;
+}
+.font2 {
+  font-family: "Roboto", sans-serif;
+}
+
+.max-width-1 {
+  max-width: 80vw;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .story-article {
+    flex-direction: column;
+  }
+
+  .story-article-img {
+    text-align: center;
+  }
+  .story-article img {
+    width: 70vw;
+  }
+}
